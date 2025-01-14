@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Converter TXT ke VCF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Converter TXT ke VCF</h1>
+
+    <label for="fileInput">Unggah File TXT:</label>
+    <input type="file" id="fileInput" multiple accept=".txt">
+
+    <label for="modeSelect">Pilih Mode Ganti Nama:</label>
+    <select id="modeSelect">
+      <option value="fileName">Nama file awal</option>  
+      <option value="inBrackets">Di Dalam Kurung</option>
+      <option value="last1">1 Karakter Terakhir</option>
+      <option value="last2">2 Karakter Terakhir</option>
+      <option value="last3">3 Karakter Terakhir</option>
+      <option value="last4">4 Karakter Terakhir</option>
+    
+    </select>
+
+    <button id="processButton">Proses File</button>
+
+    <div id="fileList"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
